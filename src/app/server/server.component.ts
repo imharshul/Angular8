@@ -14,7 +14,7 @@ export class ServerComponent implements OnInit {
 
     clickStatus = '';
 
-    eventData = '';
+    eventData = 'Hello There';
 
     getComponentName() {
         return this.componentName;
