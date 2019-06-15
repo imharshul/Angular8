@@ -12,6 +12,10 @@ export class ServerComponent implements OnInit {
     // tslint:disable-next-line:no-inferrable-types
     buttonEnabled: boolean = false;
 
+    clickStatus = '';
+
+    eventData = '';
+
     getComponentName() {
         return this.componentName;
     }
@@ -24,6 +28,14 @@ export class ServerComponent implements OnInit {
                                  this.buttonEnabled = true;
                              },
                        3000);
+    }
+
+    onButtonClick() {
+        this.clickStatus = 'Clicked';
+    }
+
+    updateSeverName(event: Event) {
+        this.eventData = (event.target as HTMLInputElement).value;
     }
 }
 
