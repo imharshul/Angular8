@@ -8,6 +8,8 @@ import { ServersComponent } from './servers/servers.component';
 import { SuccessComponent } from './assignment/success/success.component';
 import { WarningComponent } from './assignment/warning/warning.component';
 import { TwoWayBindingComponent } from './assignment-two-way-data-binding/twoWayDataBinding.component';
+import {DirectiveComponent} from './directives/directive.component';
+import {AssignmentDirectiveComponent} from './assignment-directives/assignment-directives.component';
 
 
 
@@ -18,7 +20,9 @@ import { TwoWayBindingComponent } from './assignment-two-way-data-binding/twoWay
     ServersComponent,
     SuccessComponent,
     WarningComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    DirectiveComponent,
+    AssignmentDirectiveComponent
   ],
   imports: [
     BrowserModule,

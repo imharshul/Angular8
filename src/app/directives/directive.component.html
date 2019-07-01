@@ -1,0 +1,30 @@
+<div class="container" style="text-align: end">
+        <div class="row">
+            <div class="col-xs-6">
+                <h3>Directives</h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+<div class="container" style="text-align-last: center; padding-top: 50px;">
+<div class="row">
+    <div class="col-xs-3">
+        <label>Name</label>
+    </div>
+    <div class="col-xs-3">
+            <input type="text" class='form-control'>
+     </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-3">
+          <button class="btn btn-primary" (click)="btnClicked()">Show Status</button>
+          <p *ngIf="isClicked; else notClicked">Button Clicked</p>
+<ng-template #notClicked>
+    <p>Button Not Clicked</p>
+</ng-template>
+    </div>
+</div>
+</div>

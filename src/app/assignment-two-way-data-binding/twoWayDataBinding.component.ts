@@ -9,7 +9,6 @@ export class TwoWayBindingComponent {
       username = '';
 
       resetUserName() {
-        console.log('Reset Called ' + this.username.length);
         this.username = '';
       }
 }
